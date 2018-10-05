@@ -1,6 +1,7 @@
-# 1st checking in feature branch.
-# 2nd checking in master.
-# 1st checking in master.
+# 3rd commit in master.
+# 1st commit in feature branch.
+# 2nd commit in master.
+# 1st commit in master.
 # Test AngularApp 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
