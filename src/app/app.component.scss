@@ -1,0 +1,26 @@
+.title{
+    color: #607d8b;
+    padding-left: 0px;
+    text-decoration: none;
+}
+.title-header{
+    text-align:center;
+}
+.top-nav{
+    display:table;
+    border-collapse: separate;
+}
+
+.top-nav div
+{
+    display: table-cell;
+    background-color: #607d8b;
+    color: #eee;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+        background-color: #DDD;
+        color: #607d8b;
+    }
+}
