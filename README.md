@@ -1,4 +1,6 @@
 # 3rd commit in master.
+
+# 1st commit in newbr branch.
 # 1st commit in feature branch.
 # 2nd commit in master.
 # 1st commit in master.
