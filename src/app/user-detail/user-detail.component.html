@@ -1,0 +1,47 @@
+<mat-card>
+  <mat-card-title>
+    Add/Edit Users Info
+  </mat-card-title>
+  <mat-card-content>
+    <form [formGroup]='userForm' (ngSubmit)="save()">
+
+      <div>
+        <div>
+          <div>
+            <mat-form-field class="full-width">
+              <input matInput placeholder="First Name" formControlName='firstName'>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Last Name" formControlName='lastName'>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Mobile No" formControlName='mobileNo'>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Email Id" formControlName='emailId'>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <textarea matInput placeholder="Address" matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5"
+                formControlName='address'></textarea>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <input matInput [matDatepicker]="picker" placeholder="Date of birth" formControlName='dateOfBirth'>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker touchUi="true" #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-radio-group formControlName='gender'>
+              <span>Gender: </span>
+              <mat-radio-button value="Male">Male</mat-radio-button>
+              <mat-radio-button value="Female">Female</mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <br/><br/>
+          <div>
+            <button mat-raised-button color="accent" type="submit" [disabled]="!userForm.valid">Save</button>
+            <button mat-raised-button type="button" color="accent" (click)='goBack()'>Back</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

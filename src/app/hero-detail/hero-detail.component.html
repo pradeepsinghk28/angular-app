@@ -1,0 +1,19 @@
+<form [formGroup]='heroForm' (ngSubmit)="save()">
+  <div *ngIf="hero">
+    <h2>{{hero.firstName | uppercase}} {{hero.lastName | uppercase}} Details</h2>
+    <div>
+      <span>id: </span> {{hero.id}}
+    </div>
+    <div>
+      <label>First Name
+        <!-- <input [(ngModel)]="hero.name" placeholder="name"> -->
+        <input type='text' formControlName="firstName" required>
+      </label>
+      <label>last Name
+        <input type='text' formControlName="lastName" required>
+      </label>
+    </div>
+    <button type="submit" [disabled]="!heroForm.valid">Save</button>
+    <button type="button" (click)='goBack()'>Back</button>
+  </div>
+</form>

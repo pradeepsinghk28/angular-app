@@ -2,7 +2,9 @@
 FROM node:8.9-alpine as build-stage
 WORKDIR /app
 COPY package*.json /app/
+RUN npm cache verify
 RUN npm install
+RUN npm rebuild node-sass --force  
 COPY ./ /app/
 ARG configuration=production
 RUN npm run build -- --output-path=./dist/out --configuration $configuration

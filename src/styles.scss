@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+
+/* @import '~https://fonts.googleapis.com/icon?family=Material+Icons';     */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import '~@angular/material/theming';
+
+// 3rd party libraries
+@import "~bootstrap/scss/bootstrap";
+
+.ng-star-inserted{
+    width:100%;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
+form {    
+    min-width: 150px;    
+    max-width: 800px;    
+    width: 100%;    
+}    
+    
+.full-width {    
+    width: 100%;    
+}    
+    
+body {    
+    margin: 2em auto;
+    width: 80%; 
+    font-family: Roboto, sans-serif;    
+}    
+    
+mat-card {    
+    margin: 2em auto;    
+    text-align: -webkit-center; 
+}    
+    
+mat-toolbar-row {    
+    justify-content: space-between;    
+}    
+    
+.content-center {    
+    text-align: -webkit-center;    
+}
+
+.mat-header-row {
+    background-color: rgb(255,215,64);
+ }
+
+ .mat-header-cell, .mat-cell {    
+    min-width: 100px;
+ }
+

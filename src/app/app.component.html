@@ -1,21 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
 <div class="row">
-  <a class="col-sm-4 col-lg-4 col-md-4 title" href="/">Tour Of Heroes</a>
+  <app-header class="full-width"></app-header>
 </div>
-<div class = "row top-nav">
-  <div routerLink="/dashboard">Dashboard</div>
-  <div routerLink="/heroes">Heroes</div>
-</div>
-
   <div class="row">
-    <h1 class="col-lg-12 col-md-12 col-sm-12 title-header">
-      {{ title }}!
-    </h1>
-
     <router-outlet></router-outlet>
   </div>
   <div class="row">
-    <app-messages></app-messages>
+    <!-- <app-messages></app-messages> -->
   </div>
 </div>
